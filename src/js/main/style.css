@@ -1,0 +1,88 @@
+.field-collapse {
+  margin: 40px;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.btn-collapse {
+  background-color: rgb(84, 84, 248);
+  width: 120px;
+  height: 50px;
+  color: white;
+  border: 0px;
+  border-radius: 6px;
+  font-size: large;
+  cursor: pointer;
+}
+
+.btn-collapse:hover {
+  background-color: rgb(39, 39, 253);
+}
+
+.btn-active {
+  outline: 5px solid rgb(184, 184, 255);
+}
+
+.collapse{
+  height: 0;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.animation-collapse {
+  animation-duration: 2s;
+  animation-name: collaps;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes collaps {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 120px;
+  }
+}  
+
+.text {
+  margin-top: 10px;
+  line-height: 25px;
+  color: rgb(102, 102, 102);
+  padding: 15px;
+  border: 2px solid rgb(200, 200, 200);
+  border-radius: 6px;
+
+}
+
+.copy {
+  color: rgb(195, 195, 195);
+  position: absolute;
+  left: 500px;
+  top: 100px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: small;
+}
+
+.animation-copy {
+  animation-duration: 2s;
+  animation-name: copy;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes copy {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: 210px;
+  }
+}  
+
+.stop {
+  animation-play-state: paused;
+}
